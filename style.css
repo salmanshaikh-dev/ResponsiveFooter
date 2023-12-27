@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     margin-top: 100vh;
-    background-image: url(/ruijia-wang-_cX76xaZB5A-unsplash.jpg);
+    background-image: url(ruijia-wang-_cX76xaZB5A-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,7 +53,7 @@ footer {
 
 .logo-img-nav:hover {
     transition: content 1s ease-in;
-    content: url(/slack\ \(1\).png);
+    content: url(slack\ \(1\).png);
 }
 
 .logo-p-nav {
@@ -88,7 +88,7 @@ footer {
 
 .logo-img:hover {
     transition: content 1s ease-in;
-    content: url(/slack\ color.png);
+    content: url(slack\ color.png);
 }
 
 
