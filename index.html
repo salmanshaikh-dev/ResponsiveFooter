@@ -14,6 +14,387 @@
     />
   </head>
   <body>
+    <style>
+      body {
+    margin: 0;
+    padding: 0;
+    margin-top: 100vh;
+    background-image: url(/ruijia-wang-_cX76xaZB5A-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-color: #130c58;
+    font-family: Poppins;
+    color: whitesmoke;
+}
+
+.top-footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.8px solid gray;
+    padding: 18px 60px;
+}
+
+.logo-div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-bottom: 1.8px solid gray;
+    padding: 18px 60px;
+}
+
+.logo-div-nav {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo-img-nav {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.logo-img-nav:hover {
+    transition: content 1s ease-in;
+    content: url(/slack\ \(1\).png);
+}
+
+.logo-p-nav {
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    font-family: Poppins;
+}
+
+.social-div-nav {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: white;
+}
+
+.a-nav {
+    color: white;
+    font-family: Poppins;
+
+}
+
+.logo-img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.logo-img:hover {
+    transition: content 1s ease-in;
+    content: url(/slack\ color.png);
+}
+
+
+.logo-p {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.logo-p:hover {
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 7px;
+}
+
+li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+h2 {
+    margin: 0;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    width: 12%;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.span-gap {
+    margin-left: 5px;
+}
+
+.sub-h2 {
+    border-bottom: 2px solid white;
+    display: inline-block;
+    width: 6%
+}
+
+.social-div {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social-img {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+}
+
+.main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    padding: 10px 60px 10px 20px;
+    gap: 20px;
+    font-size: .8em;
+    margin-bottom: 20px;
+}
+
+.bottom-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 60px;
+    background-color: #0d0840;
+
+}
+
+.input {
+    margin-bottom: 8px;
+    min-width: 270px;
+    padding: 8px;
+    background: transparent;
+    border: 1px solid whitesmoke;
+    border-radius: 2px;
+    color: white;
+    font-family: Poppins;
+}
+
+.input::placeholder {
+    padding-left: 5px;
+    font-family: Poppins;
+}
+
+.sub-btn {
+    min-width: 290px;
+    padding: 8px;
+    color: #130c58;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.1em;
+}
+
+.sub-btn:hover {
+    color: #ff0000;
+}
+
+.sub-btn:active {
+    background-color: #ff0000;
+    color: antiquewhite;
+    box-shadow: -4px -4px 2px rgb(187, 187, 187);
+}
+
+
+.terms-div {
+    font-family: system-ui;
+    font-size: .84em;
+    cursor: pointer;
+}
+
+.terms-div:hover {
+    text-decoration: underline;
+}
+
+.WebDevFun-span,
+.terms-p {
+    color: rgb(177, 172, 172);
+}
+
+.copyright-div {
+    font-size: .9em;
+}
+
+.WebDevFun-span:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width:985px) {
+    .input {
+        min-width: 270px;
+    }
+
+    .sub-btn {
+        min-width: 290px;
+    }
+
+    .main-div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            'company service account courses'
+            'subscribe subscribe subscribe  . ';
+    }
+
+    .company {
+        grid-area: company;
+    }
+
+    .Service-div {
+        grid-area: service;
+    }
+
+    .Account-div {
+        grid-area: account;
+    }
+
+    .courses-div {
+        grid-area: courses;
+    }
+
+    .subscribeUs-div {
+        grid-area: subscribe;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .input {
+        min-width: 300px;
+    }
+
+    .sub-btn {
+        min-width: 320px;
+    }
+
+    .main-div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            'company service account'
+            'courses service account '
+            'subscribe subscribe subscribe';
+    }
+
+    .company {
+        grid-area: company;
+    }
+
+    .Service-div {
+        grid-area: service;
+    }
+
+    .Account-div {
+        grid-area: account;
+    }
+
+    .courses-div {
+        grid-area: courses;
+    }
+
+    .subscribeUs-div {
+        grid-area: subscribe;
+    }
+
+}
+
+@media screen and (max-width:630px) {
+    .social-div-nav {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+
+
+    .main-div {
+
+        margin-bottom: 0;
+    }
+
+    .subscribeUs-div {
+        padding-bottom: 10px;
+    }
+
+    .bottom-div {
+        display: none;
+    }
+
+    .top-footer-section {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .input {
+        min-width: 320px;
+    }
+
+    .sub-btn {
+        min-width: 340px;
+    }
+
+    .main-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            'company service'
+            'account courses'
+            'subscribe subscribe';
+    }
+
+    .company {
+        grid-area: company;
+    }
+
+    .Service-div {
+        grid-area: service;
+    }
+
+    .Account-div {
+        grid-area: account;
+    }
+
+    .courses-div {
+        grid-area: courses;
+    }
+
+    .subscribeUs-div {
+        grid-area: subscribe;
+    }
+
+}
+    </style>
     <nav>
       <div class="logo-div-nav">
         <img class="logo-img-nav" src="/slack color.png" alt="logo image" />
