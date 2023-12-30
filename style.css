@@ -329,10 +329,6 @@ h2 {
         padding-bottom: 10px;
     }
 
-    .bottom-div {
-        display: none;
-    }
-
     .top-footer-section {
         display: flex;
         flex-direction: column;
