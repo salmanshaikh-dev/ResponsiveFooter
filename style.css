@@ -326,7 +326,10 @@ h2 {
     }
 
     .bottom-div {
-        font-size: 10px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
 
     .subscribeUs-div {
