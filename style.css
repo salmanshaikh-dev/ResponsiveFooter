@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     margin-top: 100vh;
-    background-image:  url(unsplash.jpg);
+    background-image: url(unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -325,8 +325,13 @@ h2 {
         margin-bottom: 0;
     }
 
+    .bottom-div {
+        font-size: 10px;
+    }
+
     .subscribeUs-div {
         padding-bottom: 10px;
+
     }
 
     .top-footer-section {
